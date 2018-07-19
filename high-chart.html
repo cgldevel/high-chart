@@ -1,0 +1,67 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`high-chart`
+
+
+@demo demo/index.html
+-->
+
+<script src="/./bower_components/highcharts/highcharts.js"></script>
+<script src="/./bower_components/highcharts/modules/exporting.js"></script>
+
+<dom-module id="high-chart">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      #container {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+
+    <div id="container"></div>
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'high-chart',
+
+      properties: {
+      },
+
+      attached: function () {
+        var myChart = Highcharts.chart('container', {
+          chart: {
+            type: 'bar'
+          },
+          title: {
+            text: 'Fruit Consumption'
+          },
+          xAxis: {
+            categories: ['Apples', 'Bananas', 'Oranges']
+          },
+          yAxis: {
+            title: {
+              text: 'Fruit eaten'
+            }
+          },
+          series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+          }, {
+            name: 'John',
+            data: [5, 7, 3]
+          }]
+        });
+      }
+
+
+    });
+  </script>
+</dom-module>
