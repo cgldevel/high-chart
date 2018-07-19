@@ -1,0 +1,25 @@
+{
+  "name": "high-chart",
+  "main": "high-chart.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "highcharts": "^6.1.1"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^6.0.0-prerelease.5",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/cgldevel/high-chart",
+  "_release": "fb6621d879",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fb6621d8799c6ec4313bf42f010cfb8e591dada7"
+  },
+  "_source": "https://github.com/cgldevel/high-chart.git",
+  "_target": "master",
+  "_originalSource": "cgldevel/high-chart",
+  "_direct": true
+}
